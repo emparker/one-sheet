@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>TETONIC one-sheet</title>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       </Head>
       <Navigation />
       <Component {...pageProps} />

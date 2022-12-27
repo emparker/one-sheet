@@ -1,20 +1,42 @@
+import { useState } from 'react'
+
+
 export default function Navigation() {
+    const [ openNavDrop, setOpenNavDrop ] = useState(false)
+
+    // const toggleNavDrop = () => {
+    //     setOpenNavDrop(!openNavDrop)
+    // }
 
     return (
-        <nav className="bg-dark-green px-14 py-4 shadow">
-            <div className="flex space-between justify-between items-center">
-                <div className="flex items-center">
-                    <a href="/" className="text-4xl font-600 text-white italic border-b-2 px-6 p-2 hover:border-b-yellow">TETONIC</a>
-                    {/* <span className="px-4 ">Building web solutions that work.</span> */}
-                </div>
-                <ul className="flex w-96 justify-between">
-                    <li className="px-4 text-lg	 text-white hover:text-yellow"><a href="/services">services</a></li>
-                    <li className="px-4 text-lg	 text-white hover:text-yellow"><a href="/about">about</a></li>
-                    <li className="px-4 text-lg	 text-white hover:text-yellow"><a href="/contact">contact</a></li>
-                </ul>
-            <a href="/logout" className="text-lg text-center border-t-2 px-6 py-2 text-white hover:border-t-yellow">
-                logout
-            </a>
+        <nav class="bg-black h-12 pt-4 px-2">
+            <div class="relative">
+                    <a href="/" class="absolute left-0 inline-block w-36 border-t-[10px] text-white hover:text-army-green"></a>
+                    <div onMouseEnter={() => setOpenNavDrop(!openNavDrop)} class="inline-block absolute right-0 w-12 group">
+                        <span class="block border-t-4 text-white group-hover:text-army-green"></span>
+                        <span class="absolute right-0 w-[50%] h-2 border-b-4 text-white group-hover:text-army-green"></span>
+                    </div>
+                { openNavDrop && (
+                    <div onMouseLeave={() => setOpenNavDrop(false)} class="absolute right-0 z-10 mt-2 w-60  origin-top-right bg-white shadow-lg ring-8 ring-dark-green ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="py-1 m-8" role="none">
+                        <p class="relative group">
+                            <a href="/services" class="text-xl block  group-hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">services</a>
+                            <span class="absolute left-0 -bottom-1 w-full h-2 bg-black -z-10 group-hover:h-full group-hover:transition-all"></span>
+                        </p>
+                        <p class="relative group">
+                            <a href="/about" class="text-xl block  group-hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">about</a>
+                            <span class="absolute left-0 -bottom-1 w-full h-2 bg-black -z-10 group-hover:h-full group-hover:transition-all"></span>
+                        </p>
+                        <p class="relative group">
+                            <a href="/contact" class="text-xl block  group-hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">contact</a>
+                            <span class="absolute left-0 -bottom-1 w-full h-2 bg-black -z-10 group-hover:h-full group-hover:transition-all"></span>
+                        </p>
+                      <form method="POST" action="#" role="none">
+                        <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm hover:text-dark-orange" role="menuitem" tabindex="-1" id="menu-item-3">logout</button>
+                      </form>
+                    </div>
+                  </div>
+                )}
         </div>
         </nav>
     )
