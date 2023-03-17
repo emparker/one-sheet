@@ -18,6 +18,9 @@ module.exports = {
       'light-orange': '#f4a261',
       'yellow': '#e9c46a',
       'army-green' : '#969696',
+      'next-blue' : '#0070f3',
+      'about-blue' : '#accae0',
+      'sand' : '#da8c4c',
     }, 
     extend: {
       // fontFamily: {
