@@ -4,8 +4,8 @@ import styles from "../styles/Home.module.css";
 export default function Contact() {
   return (
     <main className="h-screen bg-greens bg-cover bg-left bg-no-repeat xl:bg-center overflow-hidden">
-      <section className="font-sans text-white m-8">
-        <h1 className="font-semibold text-4xl ml-20 mt-20 mb-24">
+      <section className="font-sans text-white m-8 tracking-widest">
+        <h1 className="font-semibold text-4xl ml-20 mt-20 mb-24 tracking-widest">
           How Can We Help?
         </h1>
         <form
@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-x-4">
               <label className="text-right leading-loose">first name:</label>
               <input
-                className="p-1"
+                className="text-black tracking-widest rounded-md p-1 focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="text"
                 name="firstName"
                 placeholder="something"
@@ -26,7 +26,7 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-x-4">
               <label className="text-right leading-loose">last name:</label>
               <input
-                className="p-1"
+                className="text-black tracking-widest rounded-md p-1 focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="text"
                 name="lastName"
                 placeholder="something"
@@ -35,7 +35,7 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-x-4">
               <label className="text-right leading-loose">email:</label>
               <input
-                className="p-1"
+                className="text-black tracking-widest rounded-md p-1 focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="text"
                 name="email"
                 placeholder="something"
@@ -44,7 +44,7 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-x-4">
               <label className="text-right leading-loose">contact:</label>
               <input
-                className="p-1"
+                className="text-black tracking-widest rounded-md p-1 focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="text"
                 name="contact"
                 placeholder="something"
@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-x-4">
               <label className="text-right leading-loose">company:</label>
               <input
-                className="p-1"
+                className="text-black tracking-widest rounded-md p-1  focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="text"
                 name="company"
                 placeholder="something"
@@ -66,7 +66,7 @@ export default function Contact() {
               <div className="flex flex-col self-end">
                 <div>
                   <input
-                    className=""
+                    className="tracking-widest rounded-md "
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -75,7 +75,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <input
-                    className="p-1"
+                    className="tracking-widest rounded-md p-1"
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <input
-                    className="p-1"
+                    className="tracking-widest rounded-md p-1"
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -93,7 +93,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <input
-                    className="p-1"
+                    className="tracking-widest rounded-md p-1"
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -102,7 +102,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <input
-                    className="p-1"
+                    className="tracking-widest rounded-md p-1"
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -111,7 +111,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <input
-                    className="p-1"
+                    className="tracking-widest rounded-md p-1"
                     type="checkbox"
                     name="serviceRequirements"
                     placeholder="something"
@@ -125,7 +125,7 @@ export default function Contact() {
                 would you like to mention anything else?:
               </label>
               <textarea
-                className="self-end p-1"
+                className="text-black self-end tracking-widest rounded-md p-1 focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-2"
                 type="textfeild"
                 name="textContent"
                 placeholder="write something"
@@ -136,7 +136,7 @@ export default function Contact() {
           </feildset>
           <div className="col-start-1 justify-self-end md:col-start-2 md:self-end md:justify-self-start">
             <button
-              className=" bg-white text-black focus:ring-1 focus:ring-black-200 rounded-md text-sm px-5 py-1.5"
+              className="focus:outline-none focus:border-light-orange focus:ring-light-orange focus:ring-1 tracking-[.45em] bg-white text-black rounded-md text-sm font-medium hover:font-semibold focus:font-bold px-14 py-1.5"
               type="submit"
             >
               send it
